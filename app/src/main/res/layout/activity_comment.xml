@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="io.github.duke0323.netnews.bean.CommentActivity">
+
+    <RelativeLayout
+        android:id="@+id/web_navi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FAFAFA">
+
+        <ImageView
+            android:id="@+id/web_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back"/>
+
+        <ImageView
+            android:id="@+id/web_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/menu"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/web_navi"/>
+
+    <RelativeLayout
+        android:id="@+id/web_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F4F4F4">
+
+        <EditText
+            android:id="@+id/web_bottom_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/biz_tie_comment_reply_write"
+            android:hint="写跟帖"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/web_bottom_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="发送"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="22sp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

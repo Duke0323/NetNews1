@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.duke0323.netnews.content.mine.ConfigActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#EB413D"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/base_action_bar_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll"
+        android:background="#F6F6F6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/zhanghaoshezhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="账号设置"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/gerenshezhi"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/zhanghaoshezhi"
+                android:layout_below="@id/zhanghaoshezhi"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="个人设置"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/banding"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/zhanghaoshezhi"
+                android:layout_below="@id/gerenshezhi"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="绑定其他平台"
+                android:textSize="20sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/banding"
+                android:background="#4c000000"/>
+
+            <TextView
+                android:id="@+id/xitongshezhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/zhanghaoshezhi"
+                android:layout_below="@id/banding"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="系统设置"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/lanmuchajian"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/xitongshezhi"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="栏目插件设置"
+                android:textSize="20sp"/>
+
+            <RelativeLayout
+                android:id="@+id/zitishezhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/lanmuchajian">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="字体设置"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:id="@+id/right1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/biz_fb_problem_list_arrow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/right1"
+                    android:gravity="center_vertical"
+                    android:text="默认字体"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zhengwenzihao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/zitishezhi">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="正文字号"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:id="@+id/right2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/biz_fb_problem_list_arrow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/right2"
+                    android:gravity="center_vertical"
+                    android:text="中号字"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/yaowentuisong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/zhengwenzihao">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="要闻推送"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zhinengtoutiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/yaowentuisong">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="智能头条"
+                    android:textSize="20sp"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/huifuwode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/zhinengtoutiao">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="回复我的跟帖"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wifioffline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/huifuwode">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="WI-FI下自动下载"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nowifiimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/wifioffline">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="非WI-FI网络不下载图片"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shoudong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/nowifiimage">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="手动清理缓存"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:id="@+id/right3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/biz_fb_problem_list_arrow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/right3"
+                    android:gravity="center_vertical"
+                    android:text="11M"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/shoudong"
+                android:background="#4c000000"/>
+            <TextView
+                android:id="@+id/qitashezhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/zhanghaoshezhi"
+                android:layout_below="@id/shoudong"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="其他设置"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"/>
+            <RelativeLayout
+                android:id="@+id/jianchagengxin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/qitashezhi">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="检查更新"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:id="@+id/right4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/biz_fb_problem_list_arrow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/right4"
+                    android:gravity="center_vertical"
+                    android:text="V11"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/yingyongtuijian"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/jianchagengxin"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="应用推荐"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/weiwangyi"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/yingyongtuijian"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="为网易新闻评分"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/fengmian"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/weiwangyi"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="封面故事"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/guanyu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/gerenshezhi"
+                android:layout_below="@id/fengmian"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="关于"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

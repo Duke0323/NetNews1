@@ -1,0 +1,15 @@
+<io.github.duke0323.netnews.opensrc.smarttab.SmartTabLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewpagertab"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    app:stl_customTabTextLayoutId="@layout/custom_tab"
+    app:stl_customTabTextViewId="@id/custom_text"
+    app:stl_indicatorColor="@android:color/holo_red_dark"
+    app:stl_indicatorInterpolation="linear"
+    app:stl_indicatorThickness="3dp"
+    app:stl_underlineThickness="1dp"
+    />
+
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#EB413D">
+
+        <ImageView
+            android:id="@+id/net"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/base_common_default_icon_big"/>
+
+        <ImageView
+            android:id="@+id/live"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/night_biz_main_menu_live_icon"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_toLeftOf="@+id/live"
+            android:layout_toStartOf="@+id/live"
+            android:src="@drawable/ic_main_menu_search"/>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="切换栏目"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/show_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/biz_pc_read_calendar_down"/>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

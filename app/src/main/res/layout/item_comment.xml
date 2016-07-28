@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/biz_screenshot_attitude_naodong_8"/>
+
+    <TextView
+        android:maxLines="1"
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/userImg"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/userImg"
+        android:text="用户姓名"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/fromwhere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userImg"
+        android:layout_alignLeft="@id/username"
+        android:text="shangdong"
+        android:maxLines="1"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userImg"
+        android:layout_marginLeft="10dp"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/fromwhere"
+        android:text="shijian"/>
+
+    <ImageView
+        android:id="@+id/dianzanpic"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@id/username"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/iconfont_dianzan"/>
+
+    <TextView
+        android:id="@+id/dianzan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/username"
+        android:layout_toLeftOf="@id/dianzanpic"
+        android:text="11123"/>
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/username"
+        android:layout_below="@+id/fromwhere"
+        android:layout_marginTop="10dp"
+        android:text="dsfsdfsfsfsafsdfdsfd"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+    <!--<view-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_below="@id/body"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@android:color/darker_gray"/>-->
+</RelativeLayout>

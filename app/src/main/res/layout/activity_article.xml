@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/web_navi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FAFAFA">
+
+        <ImageView
+            android:id="@+id/web_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back"/>
+
+        <ImageView
+            android:id="@+id/web_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/menu"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/web_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F4F4F4">
+
+        <EditText
+            android:id="@+id/web_bottom_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/biz_tie_comment_reply_write"
+            android:hint="写跟帖"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/web_bottom_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="发送"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="22sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/web_bottom_reply_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/web_bottom_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/biz_pc_main_message"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/biz_news_newspage_share_icon"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@id/web_bottom"
+        android:layout_below="@id/web_navi"/>
+</RelativeLayout>

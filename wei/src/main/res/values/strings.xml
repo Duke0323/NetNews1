@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">wei</string>
+    <string name="qq">QQ</string>
+    <string name="sina">新浪</string>
+    <string name="weixin">微信</string>
+    <string name="zhifubao">支付宝</string>
+</resources>
